@@ -275,7 +275,8 @@ namespace Pelo.Common.Enums
         [StringValue("Không thể tạo mã token")]
         CAN_NOT_CREATE_TOKEN = 500074,
 
-
+        [StringValue("Người dùng không đủ quyền thực hiện hành động này")]
+        USER_DO_HAVE_NOT_PERMISSON_WITH_ACTION = 500075,
         #endregion
     }
 }
