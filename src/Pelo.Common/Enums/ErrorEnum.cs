@@ -1,4 +1,5 @@
-﻿using Pelo.Common.Attributes;
+﻿using System;
+using Pelo.Common.Attributes;
 
 namespace Pelo.Common.Enums
 {
@@ -35,6 +36,15 @@ namespace Pelo.Common.Enums
 
         [StringValue("Bạn phải nhập nội dung bình luận hoặc đính kèm file")]
         COMMENT_IS_NOT_NULL_OR_EMPTY = 400009,
+
+        [StringValue("Refresh token không được để trống")]
+        REFRESH_TOKEN_IS_NULL_OR_EMPTY = 400010,
+
+        [StringValue("Access token không được để trống")]
+        ACCESS_TOKEN_IS_NULL_OR_EMPTY = 400011,
+
+        [StringValue("Signing key không được để trống")]
+        SIGNING_KEY_IS_NULL_OR_EMPTY = 400012,
 
         #endregion
 
@@ -258,6 +268,13 @@ namespace Pelo.Common.Enums
 
         [StringValue("Số điện thoại khách hàng tồn tại")]
         CUSTOMER_PHONE_HAS_EXIST = 500072,
+
+        [StringValue("Token kHông hợp lệ")]
+        INVALID_TOKEN = 500073,
+
+        [StringValue("Không thể tạo mã token")]
+        CAN_NOT_CREATE_TOKEN = 500074,
+
 
         #endregion
     }
