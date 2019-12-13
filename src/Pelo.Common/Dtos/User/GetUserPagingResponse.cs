@@ -1,4 +1,5 @@
-﻿using Newtonsoft.Json;
+﻿using System;
+using Newtonsoft.Json;
 
 namespace Pelo.Common.Dtos.User
 {
@@ -6,6 +7,9 @@ namespace Pelo.Common.Dtos.User
     {
         [JsonProperty("id")]
         public int Id { get; set; }
+
+        [JsonProperty("code")]
+        public string Code { get; set; }
 
         [JsonProperty("avatar")]
         public string Avatar { get; set; }
@@ -30,5 +34,14 @@ namespace Pelo.Common.Dtos.User
 
         [JsonProperty("role")]
         public string Role { get; set; }
+
+        [JsonProperty("department")]
+        public string Department { get; set; }
+
+        [JsonProperty("is_active")]
+        public bool IsActive { get; set; }
+
+        [JsonProperty("date_created")]
+        public DateTime DateCreated { get; set; }
     }
 }

@@ -277,6 +277,12 @@ namespace Pelo.Common.Enums
 
         [StringValue("Người dùng không đủ quyền thực hiện hành động này")]
         USER_DO_HAVE_NOT_PERMISSON_WITH_ACTION = 500075,
+
+        [StringValue("Không thể thực hiện câu lệnh này: {0}")]
+        SQL_QUERY_CAN_NOT_EXECUTE = 500076,
+
+        [StringValue("Số điện thoại đã tồn tại")]
+        PHONE_NUMBER_HAS_EXIST = 500077,
         #endregion
     }
 }
