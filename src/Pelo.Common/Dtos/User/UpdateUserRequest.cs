@@ -2,13 +2,10 @@
 
 namespace Pelo.Common.Dtos.User
 {
-    public class InsertUserRequest
+    public class UpdateUserRequest
     {
-        [JsonProperty("username")]
-        public string Username { get; set; }
-
-        [JsonProperty("password")]
-        public string Password { get; set; }
+        [JsonProperty("id")]
+        public int Id { get; set; }
 
         [JsonProperty("display_name")]
         public string DisplayName { get; set; }
@@ -30,6 +27,9 @@ namespace Pelo.Common.Dtos.User
 
         [JsonProperty("department_id")]
         public int DepartmentId { get; set; }
+
+        [JsonProperty("is_active")]
+        public bool IsActive { get; set; }
 
         [JsonProperty("description")]
         public string Description { get; set; }

@@ -54,7 +54,7 @@ namespace Pelo.Common.Repositories
         {
             return Task.FromResult(new TResponse<T>
             {
-                Data = default,
+                Data = default(T),
                 IsSuccess = false,
                 Message = ex.ToString()
             });
@@ -70,7 +70,7 @@ namespace Pelo.Common.Repositories
         {
             return Task.FromResult(new TResponse<T>
             {
-                Data = default,
+                Data = default(T),
                 IsSuccess = false,
                 Message = message
             });
