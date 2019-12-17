@@ -283,6 +283,7 @@ namespace Pelo.Common.Enums
 
         [StringValue("Số điện thoại đã tồn tại")]
         PHONE_NUMBER_HAS_EXIST = 500077,
+
         #endregion
     }
 }
