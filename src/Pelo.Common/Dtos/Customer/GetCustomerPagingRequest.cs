@@ -8,42 +8,42 @@ namespace Pelo.Common.Dtos.Customer
     {
         [JsonProperty("code")]
         [FromQuery(Name = "code")]
-        public string Code { get; set; }
+        public string Code { get; set; } = "";
 
         [JsonProperty("name")]
         [FromQuery(Name = "name")]
-        public string Name { get; set; }
+        public string Name { get; set; } = "";
 
         [JsonProperty("province_id")]
         [FromQuery(Name = "province_id")]
-        public int? ProvinceId { get; set; }
+        public int? ProvinceId { get; set; } = 0;
 
         [JsonProperty("district_id")]
         [FromQuery(Name = "district_id")]
-        public int? DistrictId { get; set; }
+        public int? DistrictId { get; set; } = 0;
 
         [JsonProperty("ward_id")]
         [FromQuery(Name = "ward_id")]
-        public int? WardId { get; set; }
+        public int? WardId { get; set; } = 0;
 
         [JsonProperty("address")]
         [FromQuery(Name = "address")]
-        public string Address { get; set; }
+        public string Address { get; set; } = "";
 
         [JsonProperty("phone")]
         [FromQuery(Name = "phone")]
-        public string Phone { get; set; }
+        public string Phone { get; set; } = "";
 
         [JsonProperty("email")]
         [FromQuery(Name = "email")]
-        public string Email { get; set; }
+        public string Email { get; set; } = "";
 
         [JsonProperty("customer_group_id")]
         [FromQuery(Name = "customer_group_id")]
-        public int CustomerGroupId { get; set; }
+        public int CustomerGroupId { get; set; } = 0;
 
         [JsonProperty("customer_vip_id")]
         [FromQuery(Name = "customer_vip_id")]
-        public int CustomerVipId { get; set; }
+        public int CustomerVipId { get; set; } = 0;
     }
 }
