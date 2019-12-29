@@ -5,6 +5,9 @@ namespace Pelo.Common.Dtos.User
 {
     public class UserDisplaySimpleModel
     {
+        [JsonProperty("id")]
+        public int Id { get; set; }
+
         [JsonProperty("display_name")]
         public string DisplayName { get; set; }
 
