@@ -205,5 +205,10 @@ namespace Pelo.Common.Extensions
 
             return source.ToList();
         }
+
+        public static string ToMoneyFormat(this object obj)
+        {
+            return $"{obj:#,##0}";
+        }
     }
 }
