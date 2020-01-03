@@ -1,4 +1,5 @@
 ﻿using Newtonsoft.Json;
+using System;
 
 namespace Pelo.Common.Dtos.Customer
 {
@@ -54,5 +55,8 @@ namespace Pelo.Common.Dtos.Customer
 
         [JsonProperty("user_created")]
         public string UserCreated { get; set; }
+
+        [JsonProperty("date_created")]
+        public DateTime DateCreated { get; set; }
     }
 }
