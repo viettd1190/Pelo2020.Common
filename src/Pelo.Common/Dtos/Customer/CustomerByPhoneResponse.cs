@@ -51,5 +51,8 @@ namespace Pelo.Common.Dtos.Customer
 
         [JsonProperty("description")]
         public string Description { get; set; }
+
+        [JsonProperty("user_created")]
+        public string UserCreated { get; set; }
     }
 }
