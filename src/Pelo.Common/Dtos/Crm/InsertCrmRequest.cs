@@ -40,9 +40,6 @@ namespace Pelo.Common.Dtos.Crm
         [JsonProperty("need")]
         public string Need { get; set; }
 
-        [JsonProperty("code")]
-        public string Code { get; set; }
-
         [JsonProperty("description")]
         public string Description { get; set; }
 
