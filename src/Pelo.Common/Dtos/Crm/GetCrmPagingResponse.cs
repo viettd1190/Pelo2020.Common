@@ -84,5 +84,8 @@ namespace Pelo.Common.Dtos.Crm
 
         [JsonProperty("user_cares")]
         public List<UserDisplaySimpleModel> UserCares { get; set; } = new List<UserDisplaySimpleModel>();
+
+        [JsonProperty("customer_id")]
+        public int CustomerId { get; set; }
     }
 }
