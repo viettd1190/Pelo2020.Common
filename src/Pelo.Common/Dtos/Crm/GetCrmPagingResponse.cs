@@ -67,6 +67,18 @@ namespace Pelo.Common.Dtos.Crm
         [JsonProperty("crm_type")]
         public string CrmType { get; set; }
 
+        [JsonProperty("crm_type_id")]
+        public int CrmTypeId { get; set; }
+
+        [JsonProperty("crm_status_id")]
+        public int CrmStatusId { get; set; }
+
+        [JsonProperty("product_group_id")]
+        public int ProductGroupId { get; set; }
+
+        [JsonProperty("crm_priority_id")]
+        public int CrmPriorityId { get; set; }
+
         [JsonProperty("visit")]
         public int Visit { get; set; }
 
