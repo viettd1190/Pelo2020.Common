@@ -1,11 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using Newtonsoft.Json;
+﻿using Newtonsoft.Json;
 using Pelo.Common.Dtos.User;
+using System;
+using System.Collections.Generic;
+using System.Text;
 
 namespace Pelo.Common.Dtos.Crm
 {
-    public class GetCrmPagingResponse
+    public class GetCrmModelReponse
     {
         [JsonProperty("id")]
         public int Id { get; set; }
@@ -25,29 +26,8 @@ namespace Pelo.Common.Dtos.Crm
         [JsonProperty("customer_phone")]
         public string CustomerPhone { get; set; }
 
-        [JsonProperty("customer_phone_2")]
-        public string CustomerPhone2 { get; set; }
-
-        [JsonProperty("customer_phone_3")]
-        public string CustomerPhone3 { get; set; }
-
-        [JsonProperty("province")]
-        public string Province { get; set; }
-
-        [JsonProperty("district")]
-        public string District { get; set; }
-
-        [JsonProperty("ward")]
-        public string Ward { get; set; }
-
         [JsonProperty("customer_address")]
         public string CustomerAddress { get; set; }
-
-        [JsonProperty("customer_group")]
-        public string CustomerGroup { get; set; }
-
-        [JsonProperty("customer_vip")]
-        public string CustomerVip { get; set; }
 
         [JsonProperty("need")]
         public string Need { get; set; }
@@ -55,23 +35,17 @@ namespace Pelo.Common.Dtos.Crm
         [JsonProperty("description")]
         public string Description { get; set; }
 
-        [JsonProperty("product_group")]
-        public string ProductGroup { get; set; }
-
-        [JsonProperty("crm_priority")]
-        public string CrmPriority { get; set; }
-
-        [JsonProperty("customer_source")]
-        public string CustomerSource { get; set; }
-
         [JsonProperty("customer_source_id")]
-        public string CustomerSourceId { get; set; }
-
-        [JsonProperty("crm_type")]
-        public string CrmType { get; set; }
+        public int CustomerSourceId { get; set; }
 
         [JsonProperty("crm_type_id")]
         public int CrmTypeId { get; set; }
+
+        [JsonProperty("customer_group")]
+        public string CustomerGroup { get; set; }
+
+        [JsonProperty("customer_vip")]
+        public string CustomerVip{ get; set; }
 
         [JsonProperty("crm_status_id")]
         public int CrmStatusId { get; set; }
