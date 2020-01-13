@@ -5,9 +5,9 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Pelo.Common.Dtos.CrmStatus
+namespace Pelo.Common.Dtos.CrmType
 {
-    public class GetCrmStatusPagingRequest : GetPagingModel
+    public class GetCrmTypePagingRequest : GetPagingModel
     {
         [JsonProperty("name")]
         [FromQuery(Name = "name")]

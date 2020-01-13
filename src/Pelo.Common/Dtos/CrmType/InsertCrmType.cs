@@ -1,16 +1,17 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
-using Pelo.Common.Models;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Pelo.Common.Dtos.CrmStatus
+namespace Pelo.Common.Dtos.CrmType
 {
-    public class GetCrmStatusPagingRequest : GetPagingModel
+    public class InsertCrmType
     {
+
         [JsonProperty("name")]
         [FromQuery(Name = "name")]
         public string Name { get; set; }
+
     }
 }

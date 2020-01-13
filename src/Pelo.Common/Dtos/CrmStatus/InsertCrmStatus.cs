@@ -4,7 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Pelo.Common.Dtos.CrmPriority
+namespace Pelo.Common.Dtos.CrmStatus
 {
     public class InsertCrmStatus
     {
