@@ -1,6 +1,6 @@
 ﻿using Newtonsoft.Json;
 
-namespace Pelo.Common.Dtos.District
+namespace Pelo.Common.Dtos.Branch
 {
     public class BranchModel
     {
