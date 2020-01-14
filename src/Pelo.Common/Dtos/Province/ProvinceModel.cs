@@ -12,5 +12,8 @@ namespace Pelo.Common.Dtos.Province
 
         [JsonProperty("name")]
         public string Name { get; set; }
+
+        [JsonProperty("sort_order")]
+        public int SortOrder { get; set; }
     }
 }

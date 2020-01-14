@@ -15,5 +15,8 @@ namespace Pelo.Common.Dtos.District
 
         [JsonProperty("province_id")]
         public int ProvinceId { get; set; }
+
+        [JsonProperty("sort_order")]
+        public int SortOrder { get; set; }
     }
 }
