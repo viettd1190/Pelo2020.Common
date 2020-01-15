@@ -2,7 +2,7 @@
 
 namespace Pelo.Common.Dtos.PayMethod
 {
-    public class InsertPayMethodRequest
+    public class InsertPayMethod
     {
         [JsonProperty("name")]
         public string Name { get; set; }

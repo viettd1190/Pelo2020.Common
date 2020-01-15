@@ -4,7 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Pelo.Common.Dtos.District
+namespace Pelo.Common.Dtos.Product
 {
     public class InsertProduct
     {
@@ -47,7 +47,7 @@ namespace Pelo.Common.Dtos.District
 
         [JsonProperty("manufacturer_id")]
         [FromQuery(Name = "manufacturer_id")]
-        public int Manufacturer { get; set; }
+        public int ManufacturerId { get; set; }
 
         [JsonProperty("country_id")]
         [FromQuery(Name = "country_id")]

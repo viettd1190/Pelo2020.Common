@@ -12,7 +12,6 @@ namespace Pelo.Common.Dtos.ProductGroup
         public int Id { get; set; }
 
         [JsonProperty("name")]
-        [FromQuery(Name = "name")]
         public string Name { get; set; }
 
     }
