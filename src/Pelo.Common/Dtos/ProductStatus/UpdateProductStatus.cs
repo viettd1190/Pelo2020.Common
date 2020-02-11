@@ -4,7 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Pelo.Common.Dtos.ProductUnit
+namespace Pelo.Common.Dtos.ProductStatus
 {
     public class UpdateProductStatus
     {

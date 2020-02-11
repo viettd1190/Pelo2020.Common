@@ -1,6 +1,6 @@
 ﻿using Newtonsoft.Json;
 
-namespace Pelo.Common.Dtos.ProductUnit
+namespace Pelo.Common.Dtos.ProductStatus
 {
     public class ProductStatusSimpleModel
     {
