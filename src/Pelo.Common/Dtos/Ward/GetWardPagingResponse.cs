@@ -11,8 +11,8 @@ namespace Pelo.Common.Dtos.Ward
 
         [JsonProperty("name")] public string Name{ get; set; }
 
-        [JsonProperty("province")]
-        public string Province { get; set; }
+        [JsonProperty("district")]
+        public string District { get; set; }
 
         [JsonProperty("type")]        
         public string Type { get; set; }
