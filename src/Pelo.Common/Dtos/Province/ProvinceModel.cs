@@ -4,16 +4,16 @@ namespace Pelo.Common.Dtos.Province
 {
     public class ProvinceModel
     {
-        [JsonProperty("id")]
+        [JsonProperty("Id")]
         public int Id { get; set; }
 
-        [JsonProperty("type")]
+        [JsonProperty("Type")]
         public string Type { get; set; }
 
-        [JsonProperty("name")]
+        [JsonProperty("Name")]
         public string Name { get; set; }
 
-        [JsonProperty("sort_order")]
+        [JsonProperty("SortOrder")]
         public int SortOrder { get; set; }
     }
 }
