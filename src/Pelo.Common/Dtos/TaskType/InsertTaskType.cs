@@ -14,6 +14,6 @@ namespace Pelo.Common.Dtos.TaskType
 
         [JsonProperty("sort_order")]
         [FromQuery(Name = "sort_order")]
-        public int SortOrder { get; set; }
+        public int SortOrder { get; set; }        
     }
 }
