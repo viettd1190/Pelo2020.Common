@@ -14,7 +14,7 @@ namespace Pelo.Common.Dtos.ReceiptStatus
         [JsonProperty("color")] public string Color { get; set; }
 
 
-        [JsonProperty("send_sms")] public string IsSendSms { get; set; }
+        [JsonProperty("send_sms")] public bool IsSendSms { get; set; }
 
         [JsonProperty("sms_content")] public string SmsContent { get; set; }
 
