@@ -1,9 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 using Pelo.Common.Models;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace Pelo.Common.Dtos.Ward
 {
@@ -16,5 +13,9 @@ namespace Pelo.Common.Dtos.Ward
         [JsonProperty("province_id")]
         [FromQuery(Name = "province_id")]
         public int ProvinceId { get; set; }
+
+        [JsonProperty("district_id")]
+        [FromQuery(Name = "district_id")]
+        public int DistrictId { get; set; }
     }
 }
