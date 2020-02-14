@@ -12,5 +12,6 @@ namespace Pelo.Common.Dtos.CandidateStatus
         [JsonProperty("name")]
         [FromQuery(Name = "name")]
         public string Name { get; set; }
+
     }
 }
