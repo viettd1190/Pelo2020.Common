@@ -50,6 +50,6 @@ namespace Pelo.Common.Dtos.Task
 
         [JsonProperty("end_time")] public string EndTime { get; set; }
 
-        [JsonProperty("name")] public string Address { get; set; }
+        [JsonProperty("address")] public string Address { get; set; }
     }
 }
