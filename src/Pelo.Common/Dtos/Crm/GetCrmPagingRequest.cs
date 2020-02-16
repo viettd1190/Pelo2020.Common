@@ -5,7 +5,7 @@ using Pelo.Common.Models;
 
 namespace Pelo.Common.Dtos.Crm
 {
-    public class GetWarrantyPagingRequest : GetPagingModel
+    public class GetCrmPagingRequest : GetPagingModel
     {
         [JsonProperty("code")]
         [FromQuery(Name = "code")]
