@@ -32,20 +32,11 @@ namespace Pelo.Common.Dtos.Customer
         [JsonProperty("address")]
         public string Address { get; set; }
 
-        [JsonProperty("province_type")]
-        public string ProvinceType { get; set; }
-
         [JsonProperty("province")]
         public string Province { get; set; }
 
-        [JsonProperty("district_type")]
-        public string DistrictType { get; set; }
-
         [JsonProperty("district")]
         public string District { get; set; }
-
-        [JsonProperty("ward_type")]
-        public string WardType { get; set; }
 
         [JsonProperty("ward")]
         public string Ward { get; set; }
