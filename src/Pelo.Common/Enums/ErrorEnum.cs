@@ -266,7 +266,7 @@ namespace Pelo.Common.Enums
         [StringValue("Tỉnh thành không tồn tại")]
         PROVINCE_HAS_NOT_EXIST = 500071,
 
-        [StringValue("Số điện thoại khách hàng tồn tại")]
+        [StringValue("Số điện thoại khách hàng đã tồn tại")]
         CUSTOMER_PHONE_HAS_EXIST = 500072,
 
         [StringValue("Token kHông hợp lệ")]
