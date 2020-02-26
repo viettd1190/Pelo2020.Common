@@ -2,7 +2,7 @@
 
 namespace Pelo.Common.Dtos.Country
 {
-    public class CountryModel
+    public class GetCountryModel
     {
         [JsonProperty("id")]
         public int Id { get; set; }
