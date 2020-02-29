@@ -8,6 +8,18 @@ namespace Pelo.Common.Models
     /// <typeparam name="T"></typeparam>
     public class TResponse<T>
     {
+        public TResponse()
+        {
+            
+        }
+
+        public TResponse(T data, bool isSuccess, string message)
+        {
+            Data = data;
+            IsSuccess = isSuccess;
+            Message = message;
+        }
+
         [JsonProperty("data")]
         public T Data { get; set; }
 

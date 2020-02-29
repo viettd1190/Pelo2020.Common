@@ -5,9 +5,11 @@ using System.Linq;
 using System.Reflection;
 using System.Text;
 using System.Text.RegularExpressions;
+using Autofac;
 using Microsoft.Extensions.Configuration;
 using Newtonsoft.Json;
 using Pelo.Common.Attributes;
+using Pelo.Common.Dispatchers;
 
 namespace Pelo.Common.Extensions
 {
@@ -38,9 +40,15 @@ namespace Pelo.Common.Extensions
                            .StringValue : string.Empty;
         }
 
+        public static string Underscore(this string value) =>
+                string.Concat(value.Select((x,
+                                            i) => i > 0 && char.IsUpper(x)
+                                                          ? "_" + x
+                                                          : x.ToString()));
+
         public static string ToJson(this object input)
         {
-            if (input == null)
+            if(input == null)
             {
                 return string.Empty;
             }
@@ -82,7 +90,7 @@ namespace Pelo.Common.Extensions
 
         public static string ToColumnName(this string name)
         {
-            if (string.IsNullOrEmpty(name))
+            if(string.IsNullOrEmpty(name))
             {
                 return string.Empty;
             }
@@ -94,7 +102,7 @@ namespace Pelo.Common.Extensions
 
         public static string ToFirstCharUpper(this string input)
         {
-            if (string.IsNullOrEmpty(input))
+            if(string.IsNullOrEmpty(input))
             {
                 return string.Empty;
             }
@@ -106,7 +114,7 @@ namespace Pelo.Common.Extensions
         {
             for (int i = 32; i < 48; i++)
             {
-                text = text.Replace(((char)i) + string.Empty,
+                text = text.Replace(((char) i) + string.Empty,
                                     " ");
             }
 
@@ -149,12 +157,12 @@ namespace Pelo.Common.Extensions
         public static bool IsContainsEx(this string input,
                                         string compare)
         {
-            if (string.IsNullOrEmpty(compare))
+            if(string.IsNullOrEmpty(compare))
             {
                 return true;
             }
 
-            if (string.IsNullOrEmpty(input))
+            if(string.IsNullOrEmpty(input))
             {
                 return false;
             }
@@ -169,23 +177,23 @@ namespace Pelo.Common.Extensions
                                            string property = "Id",
                                            string sortDir = "ASC")
         {
-            if (string.IsNullOrEmpty(sortDir))
+            if(string.IsNullOrEmpty(sortDir))
             {
                 sortDir = "ASC";
             }
 
-            if (string.IsNullOrEmpty(property))
+            if(string.IsNullOrEmpty(property))
             {
                 property = "Id";
             }
 
-            if (sortDir.ToUpper() != "ASC"
+            if(sortDir.ToUpper() != "ASC"
                && sortDir.ToUpper() != "DESC")
             {
                 sortDir = "ASC";
             }
 
-            if (sortDir.ToUpper() == "ASC")
+            if(sortDir.ToUpper() == "ASC")
             {
                 return source.OrderBy(c => c.GetType()
                                             .GetProperty(property)
@@ -194,7 +202,7 @@ namespace Pelo.Common.Extensions
                              .ToList();
             }
 
-            if (sortDir.ToUpper() == "DESC")
+            if(sortDir.ToUpper() == "DESC")
             {
                 return source.OrderByDescending(c => c.GetType()
                                                       .GetProperty(property)
@@ -209,6 +217,22 @@ namespace Pelo.Common.Extensions
         public static string ToMoneyFormat(this object obj)
         {
             return $"{obj:#,##0}";
+        }
+
+        public static void AddDispatchers(this ContainerBuilder builder)
+        {
+            builder.RegisterType<Dispatcher>()
+                   .As<IDispatcher>();
+            builder.RegisterType<EventDispatcher>()
+                   .As<IEventDispatcher>();
+
+            //builder.RegisterAssemblyTypes(Assembly.GetEntryAssembly())
+            //       .AsClosedTypesOf(typeof(IQuery<>))
+            //       .AsImplementedInterfaces();
+
+            //builder.RegisterAssemblyTypes(Assembly.GetEntryAssembly())
+            //       .AsClosedTypesOf(typeof(IQueryHandler<,>))
+            //       .AsImplementedInterfaces();
         }
     }
 }
