@@ -15,6 +15,10 @@ namespace Pelo.Common.Dtos.District
         [FromQuery(Name = "name")]
         public string Name { get; set; }
 
+        [JsonProperty("province_id")]
+        [FromQuery(Name = "province_id")]
+        public int ProvinceId { get; set; }
+
         [JsonProperty("type")]
         [FromQuery(Name = "type")]
         public string Type { get; set; }

@@ -15,6 +15,14 @@ namespace Pelo.Common.Dtos.Ward
         [FromQuery(Name = "name")]
         public string Name { get; set; }
 
+        [JsonProperty("type")]
+        [FromQuery(Name = "type")]
+        public string Type { get; set; }
+
+        [JsonProperty("districtid")]
+        [FromQuery(Name = "districtid")]
+        public int DistrictId { get; set; }
+
         [JsonProperty("sort_order")]
         [FromQuery(Name = "sort_order")]
         public int SortOrder { get; set; }
