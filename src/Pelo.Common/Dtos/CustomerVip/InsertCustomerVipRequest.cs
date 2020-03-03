@@ -12,5 +12,8 @@ namespace Pelo.Common.Dtos.CustomerVip
 
         [JsonProperty("profit")]
         public int Profit { get; set; }
+
+        [JsonProperty("sortOder")]
+        public int SortOder { get; set; }
     }
 }
