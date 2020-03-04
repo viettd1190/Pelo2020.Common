@@ -12,15 +12,12 @@ namespace Pelo.Common.Dtos.Country
         public int Id { get; set; }
 
         [JsonProperty("name")]
-        [FromQuery(Name = "name")]
         public string Name { get; set; }
 
         [JsonProperty("code")]
-        [FromQuery(Name = "code")]
         public string Code { get; set; }
 
         [JsonProperty("region")]
-        [FromQuery(Name = "region")]
         public string Region { get; set; }
     }
 }
