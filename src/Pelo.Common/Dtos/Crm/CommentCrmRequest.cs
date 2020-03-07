@@ -1,7 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
-using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System.Collections.Generic;
+using Microsoft.AspNetCore.Http;
 
 namespace Pelo.Common.Dtos.Crm
 {
@@ -9,10 +7,8 @@ namespace Pelo.Common.Dtos.Crm
     {
         public int Id { get; set; }
 
-        public int CrmStatusId { get; set; }
-
         public string Comment { get; set; }
 
-        public IFormFile File { get; set; }
+        public List<IFormFile> Files { get; set; }
     }
 }
