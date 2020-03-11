@@ -9,6 +9,6 @@ namespace Pelo.Common.Dtos.Crm
 
         public string Comment { get; set; }
 
-        public List<IFormFile> Files { get; set; }
+        public IFormFileCollection Files { get; set; }
     }
 }
