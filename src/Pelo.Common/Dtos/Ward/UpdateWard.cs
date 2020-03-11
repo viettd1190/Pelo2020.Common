@@ -27,5 +27,9 @@ namespace Pelo.Common.Dtos.Ward
         [JsonProperty("sort_order")]
         [FromQuery(Name = "sort_order")]
         public int SortOrder { get; set; }
+
+        [JsonProperty("province_id")]
+        [FromQuery(Name = "province_id")]
+        public int ProvinceId { get; set; }
     }
 }

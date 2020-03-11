@@ -33,5 +33,8 @@ namespace Pelo.Common.Dtos.User
 
         [JsonProperty("description")]
         public string Description { get; set; }
+
+        [JsonProperty("isActive")]
+        public bool IsActive { get; set; }
     }
 }
