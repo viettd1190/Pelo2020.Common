@@ -17,6 +17,9 @@ namespace Pelo.Common.Dtos.Customer
         [JsonProperty("address")]
         public string Address { get; set; }
 
+        [JsonProperty("email")]
+        public string Email { get; set; }
+
         [JsonProperty("province_type")]
         public string ProvinceType { get; set; }
 
@@ -55,6 +58,9 @@ namespace Pelo.Common.Dtos.Customer
 
         [JsonProperty("user_created")]
         public string UserCreated { get; set; }
+
+        [JsonProperty("user_created_phone")]
+        public string UserCreatedPhone { get; set; }
 
         [JsonProperty("date_created")]
         public DateTime DateCreated { get; set; }
