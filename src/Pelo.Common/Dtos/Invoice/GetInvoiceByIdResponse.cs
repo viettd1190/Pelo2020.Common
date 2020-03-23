@@ -54,5 +54,7 @@ namespace Pelo.Common.Dtos.Invoice
         public int Price { get; set; }
 
         public int Quantity { get; set; }
+
+        public string Description { get; set; }
     }
 }
