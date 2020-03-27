@@ -12,12 +12,13 @@ namespace Pelo.Common.Dtos.Candidate
 
         [JsonProperty("name")] public string Name { get; set; }
 
-        [JsonProperty("color")] public string Color { get; set; }
-
-        [JsonProperty("phone")] public string Address { get; set; }
-
         [JsonProperty("email")] public string Email { get; set; }
 
         [JsonProperty("description")] public string Description { get; set; }
+
+        [JsonProperty("phone")] public string Phone { get; set; }
+
+        [JsonProperty("candidateStatusId")]
+        public int CandidateStatusId { get; set; }
     }
 }
