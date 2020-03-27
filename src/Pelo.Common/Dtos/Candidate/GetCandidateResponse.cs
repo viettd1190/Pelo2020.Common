@@ -21,5 +21,7 @@ namespace Pelo.Common.Dtos.Candidate
 
         [JsonProperty("description")] public string Description { get; set; }
 
+        [JsonProperty("address")] public string Address { get; set; }
+
     }
 }
