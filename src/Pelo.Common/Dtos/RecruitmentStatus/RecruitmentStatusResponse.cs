@@ -6,8 +6,12 @@ using System.Text;
 
 namespace Pelo.Common.Dtos.RecruitmentStatus
 {
-    public class InsertRecruitmentStatus
+    public class RecruitmentStatusResponse
     {
+        [JsonProperty("id")]
+        [FromQuery(Name = "id")]
+        public int Id { get; set; }
+
         [JsonProperty("color")]
         [FromQuery(Name = "color")]
         public string Color { get; set; }

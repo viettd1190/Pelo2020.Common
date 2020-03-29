@@ -13,11 +13,6 @@ namespace Pelo.Common.Dtos.RecruitmentStatus
 
         [JsonProperty("color")] public string Color { get; set; }
 
-
-        [JsonProperty("send_sms")] public string IsSendSms { get; set; }
-
-        [JsonProperty("sms_content")] public string SmsContent { get; set; }
-
         [JsonProperty("sort_order")]
         public int SortOrder { get; set; }
     }

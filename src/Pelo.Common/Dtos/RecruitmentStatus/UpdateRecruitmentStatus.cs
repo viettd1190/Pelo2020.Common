@@ -20,14 +20,6 @@ namespace Pelo.Common.Dtos.RecruitmentStatus
         [FromQuery(Name = "name")]
         public string Name { get; set; }
 
-        [JsonProperty("send_sms")]
-        [FromQuery(Name = "send_sms")]
-        public bool IsSendSms { get; set; }
-
-        [JsonProperty("sms_content")]
-        [FromQuery(Name = "sms_content")]
-        public string SmsContent { get; set; }
-
         [JsonProperty("sort_order")]
         [FromQuery(Name = "sort_order")]
         public int SortOrder { get; set; }
