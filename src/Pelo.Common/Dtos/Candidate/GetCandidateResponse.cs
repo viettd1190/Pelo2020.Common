@@ -23,5 +23,11 @@ namespace Pelo.Common.Dtos.Candidate
 
         [JsonProperty("address")] public string Address { get; set; }
 
+        [JsonProperty("user_name_created")] public string UserNameCreated { get; set; }
+
+        [JsonProperty("user_phone_created")] public string UserPhoneCreated { get; set; }
+
+        [JsonProperty("date_created")]
+        public DateTime DateCreated { get; set; }
     }
 }

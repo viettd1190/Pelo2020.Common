@@ -23,14 +23,14 @@ namespace Pelo.Common.Dtos.Candidate
 
         [JsonProperty("candidate_statusId")]
         [FromQuery(Name = "candidate_statusId")]
-        public string CandidateStatusId { get; set; }
-        
+        public int CandidateStatusId { get; set; } = 0;
+
         [JsonProperty("from_date")]
         [FromQuery(Name = "from_date")]
-        public DateTime FromDate { get; set; }
-        
+        public string FromDate { get; set; } = null;
+
         [JsonProperty("to_date")]
         [FromQuery(Name = "to_date")]
-        public DateTime ToDate { get; set; }
+        public string ToDate { get; set; } = null;
     }
 }
