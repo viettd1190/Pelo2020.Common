@@ -248,6 +248,12 @@ namespace Pelo.Common.Enums
         [StringValue("Trạng thái ứng viên không tồn tại")]
         CANDIDATE_STATUS_HAS_NOT_EXIST = 500065,
 
+        [StringValue("Ứng viên đã tồn tại")]
+        CANDIDATE_HAS_EXIST = 500064,
+
+        [StringValue("Ứng viên không tồn tại")]
+        CANDIDATE_HAS_NOT_EXIST = 500065,
+
         [StringValue("Tên mức độ thân thiết đã tồn tại")]
         CUSTOMER_VIP_HAS_EXIST = 500066,
 

@@ -23,5 +23,19 @@ namespace Pelo.Common.Extensions
             }
             return new List<int>();
         }
+        public static bool CheckStringIsImageExtension(string fileName)
+        {
+            if (string.IsNullOrEmpty(fileName))
+            {
+                return false;
+            }
+
+            if (fileName.EndsWith(".jpg") || fileName.EndsWith(".jpeg") || fileName.EndsWith(".png") || fileName.EndsWith(".bmp") || fileName.EndsWith(".gif"))
+            {
+                return true;
+            }
+
+            return false;
+        }
     }
 }
