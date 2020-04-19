@@ -9,6 +9,8 @@ namespace Pelo.Common.Dtos.Crm
 
         public string Comment { get; set; }
 
+        public int CrmStatusId { get; set; }
+
         public IFormFileCollection Files { get; set; }
     }
 }
