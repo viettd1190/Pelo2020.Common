@@ -8,22 +8,31 @@ namespace Pelo.Common.Dtos.Warranty
     {
         public int Id { get; set; }
 
-        public string Customer { get; set; }
+        public string CustomerName { get; set; }
+
+        public string CustomerPhone1 { get; set; }
+        public string CustomerPhone2 { get; set; }
+        public string CustomerPhone3 { get; set; }
 
         public string Code { get; set; }
 
         public string UserCreated { get; set; }
 
-        public string UserUpdated { get; set; }
+        public string UserCreatedPhone { get; set; }
 
-        public string Phone { get; set; }
+        public DateTime DeliveryDate { get; set; }
 
-        public string Address { get; set; }
+        public DateTime DateCreated { get; set; }
 
-        public string Description { get; set; }
+        public string CustomerAddress { get; set; }
 
-        public string WarrantStatus { get; set; }
+        public string WarrantyStatus { get; set; }
 
-        public string WarrantStatusColor { get; set; }
+        public string WarrantyStatusColor { get; set; }
+
+        public string Branch { get; set; }
+
+        public List<ProductInWarrantySimple> Products { get; set; } = new List<ProductInWarrantySimple>();
+
     }
 }
