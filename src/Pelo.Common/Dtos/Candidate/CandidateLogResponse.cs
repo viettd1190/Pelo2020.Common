@@ -36,4 +36,8 @@ namespace Pelo.Common.Dtos.Candidate
 
         public StatusInLog CandidateStatus { get; set; }
     }
+    public class CandidateStatusInLog
+    {
+
+    }
 }
