@@ -24,7 +24,7 @@ namespace Pelo.Common.Dtos.WarrantyStatus
         public int SortOrder { get; set; }
 
 
-        [JsonProperty("send_sms")] [FromQuery(Name = "send_sms")] public bool IsSendSms { get; set; }
+        [JsonProperty("is_send_sms")] [FromQuery(Name = "is_send_sms")] public bool IsSendSms { get; set; }
 
         [JsonProperty("sms_content")] [FromQuery(Name = "sms_content")] public string SmsContent { get; set; }
 
