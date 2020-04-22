@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Pelo.Common.Dtos.Warranty
 {
-    public class InsertProductInWarrantyRequest
+    public class ProductInWarrantyRequest
     {
         [JsonProperty("id")]
         public int Id { get; set; }

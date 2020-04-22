@@ -35,6 +35,6 @@ namespace Pelo.Common.Dtos.Warranty
         public List<int> UserCareIds { get; set; }
 
         [JsonProperty("products")]
-        public List<InsertProductInWarrantyRequest> Products { get; set; }
+        public List<ProductInWarrantyRequest> Products { get; set; }
     }
 }
