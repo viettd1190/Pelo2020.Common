@@ -29,12 +29,11 @@ namespace Pelo.Common.Dtos.Warranty
 
         [JsonProperty("from_date")]
         [FromQuery(Name = "from_date")]
-        public DateTime? FromDate { get; set; }
+        public string FromDate { get; set; } = null;
 
         [JsonProperty("to_date")]
         [FromQuery(Name = "to_date")]
-        public DateTime? ToDate { get; set; }
-
+        public string ToDate { get; set; } = null;
         [JsonProperty("user_care_id")]
         [FromQuery(Name = "user_care_id")]
         public int UserCareId { get; set; }
