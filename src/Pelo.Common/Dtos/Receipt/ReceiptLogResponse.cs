@@ -1,16 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Pelo.Common.Dtos.Warranty
+namespace Pelo.Common.Dtos.Receipt
 {
-    public class WarrantyLogResponse
+    public class ReceiptLogResponse
     {
-        public WarrantyLogResponse()
+        public ReceiptLogResponse()
         {
             Attachments = new List<LogAttachment>();
             User = new UserInLog();
-            OldWarrantyStatus = new StatusInLog();
-            WarrantyStatus = new StatusInLog();
+            OldReceiptStatus = new StatusInLog();
+            ReceiptStatus = new StatusInLog();
         }
 
         public int Id { get; set; }
@@ -23,16 +23,16 @@ namespace Pelo.Common.Dtos.Warranty
 
         public DateTime LogDate { get; set; }
 
-        public int OldWarrantyStatusId { get; set; }
+        public int OldReceiptStatusId { get; set; }
 
-        public int WarrantyStatusId { get; set; }
+        public int ReceiptStatusId { get; set; }
 
         public List<LogAttachment> Attachments { get; set; }
 
         public UserInLog User { get; set; }
 
-        public StatusInLog OldWarrantyStatus { get; set; }
+        public StatusInLog OldReceiptStatus { get; set; }
 
-        public StatusInLog WarrantyStatus { get; set; }
+        public StatusInLog ReceiptStatus { get; set; }
     }
 }
